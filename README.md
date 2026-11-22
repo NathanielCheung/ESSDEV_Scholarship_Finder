@@ -40,40 +40,24 @@ Scholarship Finder brings the listings together, matches them to each student's 
 
 ## Getting started
 
-You need Git and Docker Desktop. Windows users need WSL2 enabled.
+Setup instructions will be added once the team has the Docker environment working during Sprint 1. The goal is a single command that starts the whole stack:
 
-    git clone https://github.com/NathanielCheung/ESSDEV_Scholarship_Finder.git
-    cd ESSDEV_Scholarship_Finder
-    cp .env.example .env
     docker compose up --build
 
-Then open:
+To prepare, install Git and Docker Desktop (Windows users need WSL2 enabled). Never commit a `.env` file or real API keys.
 
-* Frontend at http://localhost:5173
-* Backend API docs at http://localhost:8000/docs
-* Health check at http://localhost:8000/health
+## Planned project structure
 
-When the frontend page shows "Backend status: ok", your setup works.
-
-Never commit your `.env` file or real API keys. The `.env.example` file only holds placeholder values.
-
-## Project structure
+This will be finalized as the team sets up the repo.
 
     frontend/    React app
     backend/     FastAPI app and tests
-      app/       API routes, models, data pipeline, and matching code
     docs/        Data schema and team decisions
     .github/     CI workflow, pull request and issue templates
 
-## Running tests
-
-    cd backend
-    pip install -r requirements.txt
-    pytest
-
 ## Contributing
 
-We work in small pull requests. Pick a task from Linear, create a branch, open a pull request with the template filled in, and get one review before merging. Read [CONTRIBUTING.md](CONTRIBUTING.md) for the full workflow.
+We work in small pull requests. Pick a task from Linear, create a branch, open a pull request, and get one review before merging. A CONTRIBUTING.md with the full workflow will be added during Sprint 1.
 
 ## Roadmap
 
