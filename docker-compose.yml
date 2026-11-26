@@ -1,0 +1,8 @@
+name: essdev-scholarship-tracker
+
+services:
+  web:
+    build:
+      context: ./frontend
+    ports:
+      - "8080:80"
